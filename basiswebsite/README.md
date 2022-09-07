@@ -61,7 +61,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Qua zicht kan je links en rechts wel dingen bekijken, maar niet in het midden dat is een blur. 
   - De kleine witte tekst op een foto is niet goed te lezen door de kleur. 
   - Bij de detailpagina zijn de foto's over het product niet overzichtelijk te zien. Je ziet dat er meerdere foto's staan, maar dat het niet duidelijk is     aangegeven.
-    <img src="readme-images/visueelBeperking.jpg" width="375px" alt="Homepage Gymschark">
+    <img src="readme-images/visueelBeperking.jpg" width="375px" alt="Bril met visuele beperking">
   
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
