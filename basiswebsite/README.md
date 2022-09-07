@@ -63,14 +63,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Bij de detailpagina zijn de foto's over het product niet overzichtelijk te zien. Je ziet dat er meerdere foto's staan, maar dat het niet duidelijk is     aangegeven.
   
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Hier een korte omschrijving
   Tijdens de screenreader is het mij opgevallen dat het best lang duurt voordat je bij de producten langs kan gaan. Ze zeggen eerst stap voor stap het       hele menu.
   
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Hier een omschrijving van hoe het opgelost kan worden
   Categorieën bij elkaar voegen, zodat ze sneller weten waar ze zijn.
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Hier een korte omschrijving
   - Als je bij een detailpagina aan komt van een product, moet je eerst weer het hele hamburger menu afgaan.
   - Als je je product in de winkelwagen wil plaatsen kan je niet meer verder navigeren.
   
@@ -78,22 +78,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Misschien opties geven of ze wel of niet het hele hamburger menu af willen gaan. Het kan best frusterend zijn als je dit elke keer moet aanhoren           wanneer je een product aanklinkt.
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Hier een korte omschrijving
   De test met de elastiekjes verliep best lastig, omdat je drie vingers aan elkaar vast hebt gebonden. 
   Je kan dus wel weer klikken, maar niet scrollen.
   
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Hier een omschrijving van hoe het opgelost kan worden
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Hier een korte omschrijving
   - Bij achromatopsie kan je niet zien of het rood, zwart, grijs etc is qua kleur van het product.
   - Bij tritanopie is de kleur bruin niet heel goed te zien, maar de rest van de kleuren wel.
   - Bij deuteranopie laat de kleuren niet meer goed zien. Kleur blauw valt dan weer wel op.
   - Protanopie komt veel overeen met deuteranopie, maar het beeld is alleen wat lcihter. De kleuren zijn lastig te onderscheiden. Blauw valt dan wel op.
   - Bij wazig zicht kan je de kleine teksten niet lezen, maar de grote teksten wel. De prijzen kan er nog wel uithalen, maar ook niet heel duidelijk.         Verder zijn de afbeeldingen wel te zien, maar kan je de bedrukkingen bijv. bij de mannenshirt niet zien. Je kan wel zien dat er iets is, maar niet wat     het is. De omschrijving tekst bij een product is niet te lezen. De knoppen zijn wel te zien, maar ook niet duidelijk. Je kan nog wel onderschijt maken     tussen de "in winkelwagen" knop en de "aan wishlist toevoegen". Het hamburger menu is ook niet te lezen, en de kopjes dames, heren en accessoires ook     niet.
   
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Hier een omschrijving van hoe het opgelost kan worden
   
 </details>
 
