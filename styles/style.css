@@ -1,0 +1,50 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:white;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+body {
+  color:var(--color-text);
+  background-color:var(--color-background);
+}
+
+#logo{
+	top: 1em;
+	left: 1em;
+	max-width: 5%;
+	max-height: 5%;
+}
+
+img{
+	max-width: 100%;
+}
+
