@@ -91,7 +91,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets_helepagina.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dynamischdeelmenu.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -112,25 +112,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  De opzet van mijn html ging goed. Het staat er zo in dat het duidelijk te lezen is. Bijna alle info van de homepage staat erin. Er mist alleen nog een klein stukje van de footer.
+  <img src="readme-images/html_opzet.jpg" width="375px" alt="html opzet van een paar sections">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
+  | Susannah       | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
-
+  - Voor de zekerheid mijn HTML laten checken.
+  - Welke code heb ik nodig om dit stukje in de footer na te maken met css?
+  <img src="readme-images/footer_vraag.jpg" width="375px" alt="">
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - punt 1
+    Mijn html staat goed onder elkaar en is duidelijk leesbaar.
   - punt 2
+    Voor punt 2 heb ik de volgende code optie gekregen, die helpt bij het maken van de footer:
+   <img src="readme-images/footer_oplossing.jpg" width="375px" alt=""> 
   - nog een punt
-  - ...
+    Daarnaast heb ik nog een paar tips gekregen hoe ik mijn navigatiebalk het beste kan vormgeven met display grid, fr en span om het logo groter te maken dan de rest van de iconen. Daarnaast kan ik ook het 3de list item aanspreken en zo het logo aanpassen.
+    <img src="readme-images/nav_oplossing.jpg" width="375px" alt=""> 
 
 </details>
 
