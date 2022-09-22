@@ -111,18 +111,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  De opzet van mijn html ging goed. Het staat er zo in dat het duidelijk te lezen is. Bijna alle info van de homepage staat erin. Er mist alleen nog een klein stukje van de footer.
+  De opzet van mijn html ging goed. Het staat er zo in dat het duidelijk te lezen is. Bijna alle info van de homepage staat erin. Er mist alleen nog een     klein stukje van de footer.
   <img src="readme-images/html_opzet.jpg" width="375px" alt="html opzet van een paar sections">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | Susannah       | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  
+  Susannah
   - Voor de zekerheid mijn HTML laten checken.
   - Welke code heb ik nodig om dit stukje in de footer na te maken met css?
   <img src="readme-images/footer_vraag.jpg" width="375px" alt="">
