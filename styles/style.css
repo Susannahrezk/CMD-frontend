@@ -37,14 +37,73 @@ body {
   background-color:var(--color-background);
 }
 
-#logo{
+header nav ul{
+	display: flex;
+}
+
+header nav ul li img{
+	display: flex;
 	top: 1em;
 	left: 1em;
-	max-width: 5%;
-	max-height: 5%;
+	height: 10%;
+} 
+
+header nav ul li img:nth-child(3){
+	display: flex;
+	/* Het logo moet groter worden dan de andere iconen*/
 }
 
 img{
+	display: flex;
 	max-width: 100%;
 }
+
+section:nth-of-type(1), section:nth-of-type(2), section:nth-of-type(3){
+	display:flex;
+	margin-bottom: 1em;
+	/*position: relative;*/
+	/* als ik position relative plaats bij de sections word het door elkaar gegooid,
+	maar zodra ik mijn scherm groter maak staat het wel goed */
+}
+
+section:nth-of-type(1) a:nth-child(1), section:nth-of-type(1) a:nth-child(2){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	color: black;
+	text-decoration: none;
+	background-color: #f6f6f6;
+	border: .125em solid #e3e3e3;
+	height: 4em;
+}
+
+section:nth-of-type(2){
+	background-image: url(../images/tenYearsStrong.jpg);
+	background-size: cover;
+}
+
+
+/* section:nth-of-type(2) a:nth-child(1), section:nth-of-type(2) a:nth-child(2){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	border: .125em solid #e3e3e3;
+	background-color: #5e5a5a;
+	height: 2em;
+	width: 8em;
+} */
+
+section:nth-of-type(3){
+	background-image: url(../images/nieuwApex.jpg);
+	background-size: cover;
+}
+
+section:nth-of-type(3) h1, section:nth-of-type(3) p, section:nth-of-type(3) a{
+	color: white;
+	margin-left: 1em;
+	
+}
+
 
