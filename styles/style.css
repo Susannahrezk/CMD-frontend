@@ -9,10 +9,6 @@ button, summary {
 	cursor: pointer;
 }
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -21,10 +17,6 @@ button, summary {
 	--color-text:#111;
 	--color-background:white;
 }
-
-
-
-
 
 /****************/
 /* JOUW STYLING */
@@ -45,7 +37,7 @@ header nav ul li img{
 	display: flex;
 	top: 1em;
 	left: 1em;
-	height: 10%;
+	height: 20%;
 } 
 
 header nav ul li img:nth-child(3){
@@ -58,15 +50,153 @@ img{
 	max-width: 100%;
 }
 
-section:nth-of-type(1), section:nth-of-type(2), section:nth-of-type(3){
+section:nth-of-type(1), section:nth-of-type(2), section:nth-of-type(3), section:nth-of-type(5){
+	display: flex;
+	margin-bottom: 1em;
+}
+
+/*vormgeving, section 1 over ten years strong*/
+
+section:nth-of-type(1) a:nth-child(1), section:nth-of-type(1) a:nth-child(2){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	color: black;
+	text-decoration: none;
+	background-color: #f6f6f6;
+	border: .125em solid #e3e3e3;
+	height: 4em;
+}
+
+
+/*vormgeving, section 2 over ten years strong*/
+section:nth-of-type(2){
+	display: flex;
+	flex-direction: column;
+	background-color: lightskyblue;
+}
+
+section:nth-of-type(2) a{
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	border-radius: 1em;
+	width: 10em;
+	height: 2.5em;
+	margin-left: 2.5em;
+	color: white;
+}
+
+section:nth-of-type(2) h1:nth-of-type(1){
+	position: absolute;
+	top: 32%;
+	margin-left: 1em;
+}
+
+section:nth-of-type(2) p:nth-of-type(1){
+	position: absolute;
+	top: 43%;
+	margin-left: 1.5em;
+	color: #000;
+}
+
+section:nth-of-type(2) a:nth-child(4){
+	display: flex;
+	border: .125em solid #e3e3e3;
+	background-color: #ffffff;
+	border-radius: 1em;
+	color: black;
+	position: absolute;
+	top:50%;
+	margin-left: 1em;
+}
+
+section:nth-of-type(2) a:nth-child(5){
+	display: flex;
+	border: .125em solid #e3e3e3;
+	background-color: #000000;
+	border-radius: 1em;
+	color: white;
+	position: absolute;
+	top:57%;
+	margin-left: 1em;
+}
+/*vormgeving, section 3 over nieuw Apex introductie*/
+
+section:nth-of-type(3){
+	display: flex;
+	flex-direction: column;
+	background-color: lightskyblue;
+	color: white;
+}
+
+/*vormgeving, section 4 over de heren Apex kleding stukken*/
+
+section:nth-of-type(4) ul{
+	display: flex;
+	margin-left: -2.4em;
+	margin-bottom: 10em;
+}
+
+section:nth-of-type(4) ul img{
+	display: flex;
+    margin: auto;
+    max-width: 50%;
+	left: 1em;
+	gap: 1em;
+}
+
+/*vormgeving, section 5 over de heren Apex kleding stukken*/
+section:nth-of-type(5){
+	display: flex;
+	flex-direction: column;
+	background-color: lightskyblue;
+	color: white;
+}
+
+/*vormgeving, section 6 over de dames Adapt kleding stukken*/
+
+section:nth-of-type(6) ul{
+	display: flex;
+	flex-direction: column;
+}
+
+section:nth-of-type(6) ul img{
+	display: flex;
+    max-width: 50%;
+}
+
+/*vormgeving, section 7 over de dames*/
+
+
+/*vormgeving, section 8 over de heren*/
+
+
+/*section:nth-of-type(4) ul:nth-of-type(1) {
+	position: absolute;
+	left: 1em;
+	bottom: -19em;
+}
+
+section:nth-of-type(4) p:nth-of-type(){
+	position: absolute;
+	left: 1em;
+	bottom: -20.5em;
+}*/
+
+
+/* section:nth-of-type(1), section:nth-of-type(2), section:nth-of-type(3){
 	display:flex;
 	margin-bottom: 1em;
 	/*position: relative;*/
 	/* als ik position relative plaats bij de sections word het door elkaar gegooid,
-	maar zodra ik mijn scherm groter maak staat het wel goed */
-}
+	maar zodra ik mijn scherm groter maak staat het wel goed 
+}*/
 
-section:nth-of-type(1) a:nth-child(1), section:nth-of-type(1) a:nth-child(2){
+/* section:nth-of-type(1) a:nth-child(1), section:nth-of-type(1) a:nth-child(2){
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -83,17 +213,18 @@ section:nth-of-type(2){
 	background-size: cover;
 }
 
-
-/* section:nth-of-type(2) a:nth-child(1), section:nth-of-type(2) a:nth-child(2){
+section:nth-of-type(2) a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-decoration: none;
 	color: white;
 	border: .125em solid #e3e3e3;
-	background-color: #5e5a5a;
+	background-color: #a19f9f;
+	border-radius: 1em;
+	width: 23em;
 	height: 2em;
-	width: 8em;
-} */
+}
 
 section:nth-of-type(3){
 	background-image: url(../images/nieuwApex.jpg);
@@ -102,8 +233,20 @@ section:nth-of-type(3){
 
 section:nth-of-type(3) h1, section:nth-of-type(3) p, section:nth-of-type(3) a{
 	color: white;
-	margin-left: 1em;
-	
 }
+
+section:nth-of-type(3) a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	border: .125em solid #e3e3e3;
+	background-color: #a19f9f;
+	border-radius: 1em;
+	width: 13em;
+	height: 2em;
+}*/
+
 
 
