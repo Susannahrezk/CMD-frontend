@@ -1,0 +1,221 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:white;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+body {
+  color:var(--color-text);
+  background-color:var(--color-background);
+}
+
+header nav ul{
+	display: flex;
+}
+
+header nav ul li img{
+	display: flex;
+	top: 1em;
+	left: 1em;
+	height: 20%;
+} 
+
+header nav ul li img:nth-child(3){
+	display: flex;
+	/* Het logo moet groter worden dan de andere iconen*/
+}
+
+img{
+	display: flex;
+	max-width: 100%;
+}
+
+section:nth-of-type(1), section:nth-of-type(2), section:nth-of-type(3), section:nth-of-type(5){
+	display: flex;
+}
+
+section:nth-of-type(2), section:nth-of-type(3), section:nth-of-type(5){
+	margin-bottom: 1em;
+}
+
+section:nth-of-type(2) img, section:nth-of-type(3) img, section:nth-of-type(5) img{
+	display: flex;
+	filter: brightness(60%); /* Om de foto donkerder te maken heb ik deze code gebruikt van de site https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness*/
+}
+
+section:nth-of-type(2) a, section:nth-of-type(3) a, section:nth-of-type(5) a{
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	width: 10em;
+	height: 2.5em;
+	margin-left: 2.5em;
+	color: white;
+}
+
+/*vormgeving, section 1 over ten years strong*/
+
+section:nth-of-type(1) a:nth-child(1), section:nth-of-type(1) a:nth-child(2){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	color:var(--color-text);
+	text-decoration: none;
+	background-color: #f6f6f6;
+	border: .125em solid #e3e3e3;
+	height: 4em;
+}
+
+/*vormgeving, section 2 over ten years strong*/
+
+section:nth-of-type(2) h1:nth-of-type(1){
+	position: absolute;
+	bottom: 22%;
+	margin-left: 1em;
+	margin-right: 1em;
+	color: white;
+}
+
+section:nth-of-type(2) p:nth-of-type(1){
+	position: absolute;
+	bottom: 18%;
+	margin-left: 1.5em;
+	margin-right: 1em;
+	color: white;
+}
+
+section:nth-of-type(2) a:nth-child(4){
+	display: flex;
+	border: .125em solid #ffffff;
+	background-color: #ffffff;
+	border-radius: 1.5em;
+	color:var(--color-text);
+	position: absolute;
+	bottom: 12%;
+	margin-left: 1em;
+}
+
+section:nth-of-type(2) a:nth-child(5){
+	display: flex;
+	border: .125em solid #3d3d3d;
+	background-color: #3d3d3d;
+	border-radius: 1.5em;
+	color: white;
+	position: absolute;
+	bottom: 5%;
+	margin-left: 1em;
+}
+
+/*vormgeving, section 3 over nieuw Apex introductie*/
+
+section:nth-of-type(3) h1:nth-of-type(1){
+	position: absolute;
+	bottom: -69%;
+	margin-left: 1em;
+	margin-right: 1em;
+	color: white;
+}
+
+section:nth-of-type(3) p:nth-of-type(1){
+	position: absolute;
+	bottom: -77%;
+	margin-left: 1.5em;
+	margin-right: 1em;
+	color: white;
+}
+
+section:nth-of-type(3) a{
+	display: flex;
+	border: .125em solid #ffffff;
+	background-color: #ffffff;
+	border-radius: 1.5em;
+	color:var(--color-text);
+	position: absolute;
+	bottom: -85%;
+	margin-left: 1em;
+}
+
+/*vormgeving, section 4 over de heren Apex kleding stukken*/
+
+section:nth-of-type(4) ul{
+	display: flex;
+	margin-bottom: 11em;
+}
+
+section:nth-of-type(4) ul img{
+    max-width: 50%;
+}
+
+section:nth-of-type(4) a{
+	color: var(--color-text);
+}
+/*vormgeving, section 5 over de heren Apex kleding stukken*/
+
+section:nth-of-type(5) h1:nth-of-type(1){
+	position: absolute;
+	bottom: -223%;
+	margin-left: 1em;
+	margin-right: 1em;
+	color: white;
+}
+
+section:nth-of-type(5) p:nth-of-type(1){
+	position: absolute;
+	bottom: -230%;
+	margin-left: 1.5em;
+	margin-right: 1em;
+	color: white;
+}
+
+section:nth-of-type(5) a{
+	display: flex;
+	border: .125em solid #ffffff;
+	background-color: #ffffff;
+	border-radius: 1.5em;
+	color:var(--color-text);
+	position: absolute;
+	bottom: -237%;
+	margin-left: 1em;
+}
+
+/*vormgeving, section 6 over de dames Adapt kleding stukken*/
+
+section:nth-of-type(6) ul{
+	display: flex;
+	flex-direction: column;
+}
+
+section:nth-of-type(6) ul img{
+	display: flex;
+    max-width: 50%;
+}
+
+/*vormgeving, section 7 over de dames*/
+
+
+/*vormgeving, section 8 over de heren*/
+
+
