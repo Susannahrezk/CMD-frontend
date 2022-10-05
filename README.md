@@ -278,7 +278,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Korte omschrijving met plaatjes
   Bij de heren apex artikelen is het me niet gelukt om de tekst goed onder elkaar te krijgen. Mijn navbar werkt niet mee en de maten van het product blijven op de knop maattabel staan. 
 
-  Het is soms nog best lastig om de code op de juiste manier toe te passen, maar als het me dan lukt is het dan weer wat makkelijker.
+  Het is soms nog best lastig om de code op de juiste manier toe te passen, maar als het me dan lukt is het dan weer wat makkelijker. En omdat ik nog niet klaar ben met me site, moet ik ook nog mijn knoppen vormgeven (active etc). En wat animaties toevoegen, zoals bij de 50% off tekst dat het naar voren en naar achteren springt. Bij de andere knoppen nog leuke en toffe animaties erbij toevoegen.
  <img src="readme-images/navbar.jpg" width="375px" alt="top">
   <img src="readme-images/heren.jpg" width="375px" alt="top">
   <img src="readme-images/maten.jpg" width="375px" alt="top">
