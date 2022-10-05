@@ -67,11 +67,11 @@ section:nth-of-type(1), section:nth-of-type(2), section:nth-of-type(3), section:
 	display: flex;
 }
 
-section:nth-of-type(2), section:nth-of-type(3), section:nth-of-type(4), section:nth-of-type(5), section:nth-of-type(6), section:nth-of-type(7), section:nth-of-type(8), section:nth-of-type(9), section:nth-of-type(10), section:nth-of-type(11), section:nth-of-type(12), section:nth-of-type(13), footer ul:nth-of-type(2){
+section:nth-of-type(2), section:nth-of-type(3), section:nth-of-type(4), section:nth-of-type(5), section:nth-of-type(6), section:nth-of-type(7), section:nth-of-type(8), section:nth-of-type(10), section:nth-of-type(11), footer ul:nth-of-type(2){
 	margin-bottom: 1em; /* witruimte onder de sections waarbij nodig */
 }
 
-section:nth-of-type(2) img, section:nth-of-type(3) img, section:nth-of-type(5) img, section:nth-of-type(7) img, section:nth-of-type(8) img{
+section:nth-of-type(2) img, section:nth-of-type(3) img, section:nth-of-type(5) img, section:nth-of-type(7) img, section:nth-of-type(8) img, section:nth-of-type(9) img{
 	display: flex;
 	filter: brightness(60%); /* Om de foto donkerder te maken heb ik deze code gebruikt van de site https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness*/
 }
@@ -81,7 +81,7 @@ section:nth-of-type(2) h1:nth-of-type(1), section:nth-of-type(2) p:nth-of-type(1
 	color: white; 
 } /* zelfde opmaak voor de sections margin-right en de color white voor de tekst */
 
-section:nth-of-type(2) a, section:nth-of-type(3) a, section:nth-of-type(5) a,  section:nth-of-type(7) a,  section:nth-of-type(8) a, section:nth-of-type(12) button{
+section:nth-of-type(2) a, section:nth-of-type(3) a, section:nth-of-type(5) a,  section:nth-of-type(7) a,  section:nth-of-type(8) a, section:nth-of-type(9) a:nth-of-type(1), section:nth-of-type(9) a:nth-of-type(2), section:nth-of-type(9) a:nth-of-type(3), section:nth-of-type(10) button{
 	display: flex;
 	position: absolute;
 	justify-content: center;
@@ -108,16 +108,19 @@ section:nth-of-type(1) a:nth-child(1), section:nth-of-type(1) a:nth-child(2){
 }
 
 /*vormgeving, section 2 over ten years strong*/
+section:nth-of-type(2){
+	position:relative
+}
 
 section:nth-of-type(2) h1:nth-of-type(1){
 	position: absolute;
-	bottom: 34%;
+	top: 45%;
 	margin-left: 1em;
 }
 
 section:nth-of-type(2) p:nth-of-type(1){
 	position: absolute;
-	bottom: 30%;
+	top: 60%;
 	margin-left: 1.5em;
 }
 
@@ -128,7 +131,7 @@ section:nth-of-type(2) a:nth-child(4){
 	border-radius: 1.5em;
 	color:var(--color-text);
 	position: absolute;
-	bottom: 24%;
+	bottom: 20%;
 	margin-left: 1em;
 }
 
@@ -139,15 +142,19 @@ section:nth-of-type(2) a:nth-child(5){
 	border-radius: 1.5em;
 	color: white;
 	position: absolute;
-	bottom: 17%;
+	bottom: 10%;
 	margin-left: 1em;
 }
 
 /*vormgeving, section 3 over nieuw Apex introductie*/
 
+section:nth-child(3){
+	position: relative;
+}
+
 section:nth-of-type(3) h1:nth-of-type(1){
 	position: absolute;
-	bottom: -66%;
+	top: 62%;
 	margin-left: 1em;
 	margin-right: 1em;
 	color: white;
@@ -155,7 +162,7 @@ section:nth-of-type(3) h1:nth-of-type(1){
 
 section:nth-of-type(3) p:nth-of-type(1){
 	position: absolute;
-	bottom: -73%;
+	top: 70%;
 	margin-left: 1.5em;
 	margin-right: 1em;
 	color: white;
@@ -168,20 +175,60 @@ section:nth-of-type(3) a{
 	border-radius: 1.5em;
 	color:var(--color-text);
 	position: absolute;
-	bottom: -80%;
+	top: 83%;
 	margin-left: 1em;
 }
 
 /*vormgeving, section 4 over de heren Apex kleding stukken*/
+section:nth-of-type(4){
+	position: relative;
+}
+
+section:nth-of-type(4) h2{
+	margin-left: .7em;
+}
+
+section:nth-of-type(4) h3{
+	margin-left: .8em;
+}
+
+section:nth-of-type(4) a{
+	margin-left: 1em;
+}
 
 section:nth-of-type(4) ul{
 	display: flex;
+	flex-direction: column;
 	padding-inline-start: 0em;
 	padding-left: 1em;
 }
 
-section:nth-of-type(4) ul img{
-    max-width: 50%;
+section:nth-of-type(4) ul:nth-of-type(1) img, section:nth-of-type(4) ul:nth-of-type(2) img{
+    width: 40%;
+}
+
+section:nth-of-type(4) ul:nth-of-type(2) img{
+	position: absolute;
+	top: 24.1%;
+	left: 55%;
+	width: 38.7%;
+}
+
+section:nth-of-type(4) ul:nth-of-type(2) p{
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	top: 59%;
+	left: 55%;
+	width: 38.7%;
+}
+
+section:nth-of-type(4) li p{
+	margin-bottom: .2em;
+}
+
+section:nth-of-type(4) p{
+	font-size: .7em;
 }
 
 section:nth-of-type(4) a, section:nth-of-type(6) a{
@@ -190,15 +237,19 @@ section:nth-of-type(4) a, section:nth-of-type(6) a{
 
 /*vormgeving, section 5 over de heren Apex kleding stukken*/
 
+section:nth-of-type(5){
+	position: relative;
+}
+
 section:nth-of-type(5) h1:nth-of-type(1){
 	position: absolute;
-	bottom: -200%;
+	top: 50%;
 	margin-left: 1em;
 }
 
 section:nth-of-type(5) p:nth-of-type(1){
 	position: absolute;
-	bottom: -206%;
+	top: 64%;
 	margin-left: 1.5em;
 }
 
@@ -209,13 +260,18 @@ section:nth-of-type(5) a{
 	border-radius: 1.5em;
 	color:var(--color-text);
 	position: absolute;
-	bottom: -212%;
+	top: 80%;
 	margin-left: 1em;
 }
 
 /*vormgeving, section 6 over de dames Adapt kleding stukken*/
+section:nth-of-type(6){
+	position: relative;
+}
+
 section:nth-of-type(6) h2{
 	margin-right: 1em;
+	margin-left: .7em;
 }
 
 section:nth-of-type(6) h2 span{
@@ -230,15 +286,64 @@ section:nth-of-type(6) ul{
 	padding-left: 1em;
 }
 
-section:nth-of-type(6) ul img{
-	display: flex;
-    max-width: 50%;
+section:nth-of-type(6) li p{
+	margin-bottom: .2em;
+}
+
+section:nth-of-type(6) ul:nth-of-type(1) li:nth-of-type(3) p{
+	position: absolute;
+	top: 83%;
+}
+
+section:nth-of-type(6) ul:nth-of-type(1) li:nth-of-type(4) p{
+	position: absolute;
+	top: 89.5%;
+}
+
+section:nth-of-type(6) ul:nth-of-type(1) img, section:nth-of-type(6) ul:nth-of-type(2) img{
+    width: 40%;
+}
+
+section:nth-of-type(6) ul:nth-of-type(2) img{
+	position: absolute;
+	top: 34.8%;
+	left: 55%;
+	width: 38.7%;
+}
+
+section:nth-of-type(6) p{
+	font-size: .7em;
+}
+
+section:nth-of-type(6) ul:nth-of-type(2) p{
+	position: absolute;
+	top: 76%;
+	left: 55%;
+	width: 38.7%;
+}
+
+section:nth-of-type(6) ul:nth-of-type(2) li:nth-of-type(2) p{
+	position: absolute;
+	top: 83%;
+}
+
+section:nth-of-type(6) ul:nth-of-type(2) li:nth-of-type(3) p{
+	position: absolute;
+	top: 89%;
+}
+
+section:nth-of-type(6) a{
+	margin-left: 1em;
 }
 
 /*vormgeving, section 7 over de dames*/
+section:nth-of-type(7){
+	position: relative;
+}
+
 section:nth-of-type(7) h1{
 	position: absolute;
-	top: 460%;
+	top: 30%;
 	right: 3%;
 	margin-right: 1em;
 	color: white;
@@ -261,16 +366,20 @@ section:nth-of-type(7) a{
 	border-radius: 1.5em;
 	color:var(--color-text);
 	position: absolute;
-	top: 473%;
+	top: 63%;
 	right: 3%;
 	margin-left: 1em;
 	margin-right: 1em;
 }
 
 /*vormgeving, section 8 over de heren*/
+section:nth-of-type(8){
+	position: relative;
+}
+
 section:nth-of-type(8) h1{
 	position: absolute;
-	top: 505%;
+	top: 28%;
 	left: 3%;
 	margin-left: 1em;
 	color: white;
@@ -294,14 +403,92 @@ section:nth-of-type(8) a{
 	border-radius: 1.5em;
 	color:var(--color-text);
 	position: absolute;
-	top: 518%;
+	top: 60%;
 	left: 3%;
 	margin-left: 1em;
 	margin-right: 1em;
 }
 
-/*vormgeving, section 12 schrijf je in en ontvang 10% korting*/
-section:nth-of-type(12){
+/*vormgeving, section 9 scroll bar met de lees meer foto's*/
+
+section:nth-of-type(9){
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	overflow-x: scroll;
+	background-color: #ececec;
+	position: relative;
+}
+
+section:nth-of-type(9) img{
+	width: 90%;
+	margin-left: .5em;
+	margin-right: .5em;
+	padding: 1em 0 1em .5em;
+	background-size: cover;
+}
+
+section:nth-of-type(9) h4:nth-of-type(1){
+	font-size: 1em;
+	position: absolute;
+	left: 30%;
+	top: 30%;
+	color: white;
+	z-index: 1;
+}
+
+section:nth-of-type(9) a:nth-of-type(1), section:nth-of-type(9) a:nth-of-type(2), section:nth-of-type(9) a:nth-of-type(3){
+	position: absolute;
+	display: flex;
+	border: .125em solid #ffffff;
+	width: 7em;
+	background-color: #ffffff;
+	border-radius: 1.5em;
+	color:var(--color-text);
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+section:nth-of-type(9) a:nth-of-type(1){
+	left: 32%;
+	top: 55%;
+}
+
+section:nth-of-type(9) h4:nth-of-type(2){
+	display: flex;
+	text-align: center;
+	font-size: 1em;
+	position: absolute;
+	left: 127%;
+	top: 25%;
+	color: white;
+	z-index: 1;
+}
+
+section:nth-of-type(9) a:nth-of-type(2){
+	left: 124%;
+	top: 55%;
+}
+
+section:nth-of-type(9) h4:nth-of-type(3){
+	display: flex;
+	text-align: center;
+	font-size: 1em;
+	position: absolute;
+	left: 225%;
+	top: 30%;
+	color: white;
+	z-index: 1;
+}
+
+section:nth-of-type(9) a:nth-of-type(3){
+	left: 215%;
+	top: 55%;
+}
+
+
+/*vormgeving, section 10 schrijf je in en ontvang 10% korting*/
+section:nth-of-type(10){
 	background-color: black;
 	padding-top: 2em;
 	padding-left: 4.5em;
@@ -309,13 +496,13 @@ section:nth-of-type(12){
 	padding-bottom: 5em;
 }
 
-section:nth-of-type(12) p{
+section:nth-of-type(10) p{
 	display: flex;
 	text-align: center;
 	color: white;
 }
 
-section:nth-of-type(12) button{
+section:nth-of-type(10) button{
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -326,19 +513,19 @@ section:nth-of-type(12) button{
 	color: var(--color-text);
 }
 
-/*vormgeving, section 13 meer dan alleen sportkleding*/
-section:nth-of-type(13){
+/*vormgeving, section 11 meer dan alleen sportkleding*/
+section:nth-of-type(11){
 	border: 0.1rem solid #bbbcbc;
 	margin-left: 1.3em;
 	margin-right: 1.5em;
 	padding: 1em;
 }
 
-section:nth-of-type(13) h2{
+section:nth-of-type(11) h2{
 	font-size: 1em;
 }
 
-section:nth-of-type(13) p{
+section:nth-of-type(11) p{
 	font-size: .8em;
 }
 
@@ -428,6 +615,59 @@ details[open] summary {
 }
 
 /*  EINDE  */
+article{
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	overflow-x: scroll;
+	position: relative;
+}
+
+article h2{
+	position: absolute;
+	border-top: .100em solid #d1d1d1;
+    padding: .5em 4.5em .5em;
+	margin-top: 0;
+	margin-left: 1.5em;
+	font-size: 1em;
+}
+
+article img{
+	margin-top: 3em;
+	padding: 0 .2em 0 1em;
+	width: 50%;
+}
+
+article p{
+	background-color: #ececec;
+	height: 2.5em;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: .8em;
+	font-weight: bolder;
+}
+
+article p:nth-of-type(1){
+	top: 70%;
+	left: 4%;
+	width: 45.5%;
+	z-index: 1;
+}
+
+article p:nth-of-type(2){
+	top: 70%;
+	left: 54%;
+	width: 45.5%;
+	z-index: 1;
+}
+article p:nth-of-type(3){
+	top: 70%;
+	left: 104%;
+	width: 45.5%;
+	z-index: 1;
+}
 
 footer ul:nth-of-type(3){
 	display: flex;
