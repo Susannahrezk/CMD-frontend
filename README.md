@@ -245,6 +245,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
+  Structuur HTML aanpassen, article om de blokjes, position absolute weg, met flexbox alles onder elkaar
+  background images gebruiken zodat position absolute niet hoeft, zie screenshot.
+  menu toevoegen
+
   - punt 1
   - punt 2
   - nog een punt
@@ -313,5 +317,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   16. Footer e-mail sign up https://images.ctfassets.net/wl6q2in9o7k3/78i6cwhCg8cVO59Dvlk7Gy/ec15b2ca715a0b1aa27be0fd09c6aa03/newsletter__1_.jpg
   17. Footer Gymshark training https://images.ctfassets.net/wl6q2in9o7k3/3TTQZzGVSeCd6TrrBs0OlS/16db4a41783e3ae43ac642c327aa82c9/new_training_app_footer.jpg
   18. Footer Gymshark Central https://images.ctfassets.net/wl6q2in9o7k3/4QtcnsrjM61MBOfKzadnle/a18d71a24ca40bbc8137b754927e9c75/blog.jpg
+  19. JavaScript button groen laten worden https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById, Niels heeft hierbij geholpen.
 
 </details>

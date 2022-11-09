@@ -43,21 +43,17 @@
   
   header nav ul{
       display: flex;
-      margin-bottom: -5.5em;
+      justify-content: space-evenly;
       padding-inline-start: 0;
   }
   
   header nav ul li img{
       top: 1em;
       left: 1em;
-      height: 20%;
+      height: 5vh;
+      width: 5vh;
   } 
-  
-  header nav ul li img:nth-child(3){
-      display: flex;
-      /* Het logo moet groter worden dan de andere iconen*/
-  }
-  
+
   img{
       display: flex;
       width: 100%;
@@ -85,69 +81,110 @@ section:nth-of-type(1) img{
     height: 100%;
 }
 
-/* vormgeving, section 2: korting*/
+/* vormgeving, korting*/
 h2{
     color: red;
     margin-left: 1em;
     margin-top: .2em;
 }
 
-/* vormgeving, section 3*/
-
-section:nth-of-type(2){
+/* vormgeving, section 2*/
+section:nth-of-type(2) article{
+    display: flex;
+    flex-direction: column;
     position: relative;
-    margin-left: 1.3em;
-    border-bottom: 0.1rem solid rgb(231, 231, 231);
-    margin-right: 1.3em;
 }
 
 section:nth-of-type(2) h1{
-    font-size: 1em;
+    margin-left: 1.2em;
+    margin-top: 0;
 }
 
 section:nth-of-type(2) h5{
-    font-size: .8em;
-    margin-top: .3em;
-    color: rgb(122, 122, 122);
+    margin-left: 1.7em;
+    margin-top: -.5em;
+    color: gray;
 }
 
-section:nth-of-type(2) p{
+section:nth-of-type(2) article:nth-child(1) p{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1em;
+    font-size: 1.5em;
+    overflow-x: none;
     margin-top: -.5em;
-    font-size: 1.3em;
-    text-decoration-style: bold;
 }
 
 section:nth-of-type(2) p:nth-of-type(2){
-   position: absolute;
-   font-size: 1em;
-   top: 67%;
-   left: 25%;
-   color: rgb(122, 122, 122);
-   text-decoration: line-through;
+    position: absolute;
+    font-size: .5em;
+    color: gray;
+    text-decoration: line-through;
+    bottom: 1%;
+    left: 28%;
 }
 
-
+/* vormgeving, section 3*/
 section:nth-of-type(3){
-    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-of-type(3) article:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+}
+
+section:nth-of-type(3) article:nth-child(1) h3{
+    margin-left: 1.5em;
+}
+
+section:nth-of-type(3) article:nth-child(1) a{
+    margin-left: 12em;
+    margin-top: 1em;
+    text-decoration: underline;
+    color: var(--color-text);
+    display: flex;
+    justify-content: flex-end;
+}
+
+section:nth-of-type(3) ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 section:nth-of-type(3) button{
-    position: absolute;
-    top: 4%;
-    left: 80%;
-    background-color: white;
-    height: 0;
-    width: 0;
-    color: var(--color-text);
-    text-decoration: underline;
-}
-
-section:nth-of-type(3) h3{
-    margin-left: 1em;
-}
-
-section:nth-of-type(3) ul li button{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text);
+    background-color: white;
+    border-color: black;
+    font-size: 1.5em;
+    width: 2.5em;
+    height: 2.5em;
+    margin-bottom: .125em;
+}
+
+/* vormgeving, link aan wishlist toevoegen*/
+#wishlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    border-radius: 1em;
+    width: 20em;
+    height: 2.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    text-decoration: none;
+}
+
+#wishlist.anders{
+    background-color: green;
 }
 
 /* vormgeving, button mijn account*/
@@ -236,7 +273,7 @@ details[open] summary {
 }
 
 /*  EINDE  */
-article{
+footer article{
 	display: flex;
 	flex-direction: row;
 	overflow: hidden;
@@ -244,7 +281,7 @@ article{
 	position: relative;
 }
 
-article h2{
+footer article h2{
 	position: absolute;
 	border-top: .100em solid #d1d1d1;
     padding: .5em 4.5em .5em;
@@ -254,13 +291,13 @@ article h2{
     color: var(--color-text);
 }
 
-article img{
+footer article img{
 	margin-top: 3em;
 	padding: 0 .2em 0 1em;
 	width: 50%;
 }
 
-article p{
+footer article p{
 	background-color: #ececec;
 	height: 2.5em;
 	position: absolute;
@@ -271,20 +308,20 @@ article p{
 	font-weight: bolder;
 }
 
-article p:nth-of-type(1){
+footer article p:nth-of-type(1){
 	top: 70%;
 	left: 4%;
 	width: 45.5%;
 	z-index: 1;
 }
 
-article p:nth-of-type(2){
+footer article p:nth-of-type(2){
 	top: 70%;
 	left: 54%;
 	width: 45.5%;
 	z-index: 1;
 }
-article p:nth-of-type(3){
+footer article p:nth-of-type(3){
 	top: 70%;
 	left: 104%;
 	width: 45.5%;

@@ -2,687 +2,609 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
-}
-
-button, summary {
-	cursor: pointer;
-}
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:white;
-}
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
-body {
-  color:var(--color-text);
-  background-color:var(--color-background);
-  font-family: Roboto,Helvetica,Arial,sans-serif;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-li { /* Hierdoor zie je de puntjes van mijn list items niet*/
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-header nav ul{
-	display: flex;
-	margin-bottom: -5.5em;
-	padding-inline-start: 0;
-}
-
-header nav ul li img{
-	top: 1em;
-	left: 1em;
-	height: 20%;
-} 
-
-header nav ul li img:nth-child(3){
-	display: flex;
-	/* Het logo moet groter worden dan de andere iconen*/
-}
-
-img{
-	display: flex;
-	width: 100%;
-}
-
-section:nth-of-type(1), section:nth-of-type(2), section:nth-of-type(3), section:nth-of-type(5), section:nth-of-type(7), section:nth-of-type(8){
-	display: flex;
-}
-
-section:nth-of-type(2), section:nth-of-type(3), section:nth-of-type(4), section:nth-of-type(5), section:nth-of-type(6), section:nth-of-type(7), section:nth-of-type(8), section:nth-of-type(10), section:nth-of-type(11), footer ul:nth-of-type(2){
-	margin-bottom: 1em; /* witruimte onder de sections waarbij nodig */
-}
-
-section:nth-of-type(2) img, section:nth-of-type(3) img, section:nth-of-type(5) img, section:nth-of-type(7) img, section:nth-of-type(8) img, section:nth-of-type(9) img{
-	display: flex;
-	filter: brightness(60%); /* Om de foto donkerder te maken heb ik deze code gebruikt van de site https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness*/
-}
-
-section:nth-of-type(2) h1:nth-of-type(1), section:nth-of-type(2) p:nth-of-type(1), section:nth-of-type(5) h1:nth-of-type(1), section:nth-of-type(5) p:nth-of-type(1){
-	margin-right: 1em;
-	color: white; 
-} /* zelfde opmaak voor de sections margin-right en de color white voor de tekst */
-
-section:nth-of-type(2) a, section:nth-of-type(3) a, section:nth-of-type(5) a,  section:nth-of-type(7) a,  section:nth-of-type(8) a, section:nth-of-type(9) a:nth-of-type(1), section:nth-of-type(9) a:nth-of-type(2), section:nth-of-type(9) a:nth-of-type(3), section:nth-of-type(10) button{
-	display: flex;
-	position: absolute;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-	width: 10em;
-	height: 2.5em;
-	margin-left: 2.5em;
-	color: white;
-}
-
-/*vormgeving, section 1 over ten years strong*/
-
-section:nth-of-type(1) a:nth-child(1), section:nth-of-type(1) a:nth-child(2){
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	color:var(--color-text);
-	text-decoration: none;
-	background-color: #f6f6f6;
-	border: .125em solid #e3e3e3;
-	height: 4em;
-}
-
-/*vormgeving, section 2 over ten years strong*/
-section:nth-of-type(2){
-	position:relative
-}
-
-section:nth-of-type(2) h1:nth-of-type(1){
-	position: absolute;
-	top: 45%;
-	margin-left: 1em;
-}
-
-section:nth-of-type(2) p:nth-of-type(1){
-	position: absolute;
-	top: 60%;
-	margin-left: 1.5em;
-}
-
-section:nth-of-type(2) a:nth-child(4){
-	display: flex;
-	border: .125em solid #ffffff;
-	background-color: #ffffff;
-	border-radius: 1.5em;
-	color:var(--color-text);
-	position: absolute;
-	bottom: 20%;
-	margin-left: 1em;
-}
-
-section:nth-of-type(2) a:nth-child(5){
-	display: flex;
-	border: .125em solid #3d3d3d;
-	background-color: #3d3d3d;
-	border-radius: 1.5em;
-	color: white;
-	position: absolute;
-	bottom: 10%;
-	margin-left: 1em;
-}
-
-/*vormgeving, section 3 over nieuw Apex introductie*/
-
-section:nth-child(3){
-	position: relative;
-}
-
-section:nth-of-type(3) h1:nth-of-type(1){
-	position: absolute;
-	top: 62%;
-	margin-left: 1em;
-	margin-right: 1em;
-	color: white;
-}
-
-section:nth-of-type(3) p:nth-of-type(1){
-	position: absolute;
-	top: 70%;
-	margin-left: 1.5em;
-	margin-right: 1em;
-	color: white;
-}
-
-section:nth-of-type(3) a{
-	display: flex;
-	border: .125em solid #ffffff;
-	background-color: #ffffff;
-	border-radius: 1.5em;
-	color:var(--color-text);
-	position: absolute;
-	top: 83%;
-	margin-left: 1em;
-}
-
-/*vormgeving, section 4 over de heren Apex kleding stukken*/
-section:nth-of-type(4){
-	position: relative;
-}
-
-section:nth-of-type(4) h2{
-	margin-left: .7em;
-}
-
-section:nth-of-type(4) h3{
-	margin-left: .8em;
-}
-
-section:nth-of-type(4) a{
-	margin-left: 1em;
-}
-
-section:nth-of-type(4) ul{
-	display: flex;
-	flex-direction: column;
-	padding-inline-start: 0em;
-	padding-left: 1em;
-}
-
-section:nth-of-type(4) ul:nth-of-type(1) img, section:nth-of-type(4) ul:nth-of-type(2) img{
-    width: 40%;
-}
-
-section:nth-of-type(4) ul:nth-of-type(2) img{
-	position: absolute;
-	top: 24.1%;
-	left: 55%;
-	width: 38.7%;
-}
-
-section:nth-of-type(4) ul:nth-of-type(2) p{
-	display: flex;
-	flex-direction: row;
-	position: absolute;
-	top: 59%;
-	left: 55%;
-	width: 38.7%;
-}
-
-section:nth-of-type(4) li p{
-	margin-bottom: .2em;
-}
-
-section:nth-of-type(4) p{
-	font-size: .7em;
-}
-
-section:nth-of-type(4) a, section:nth-of-type(6) a{
-	color: var(--color-text);
-}
-
-/*vormgeving, section 5 over de heren Apex kleding stukken*/
-
-section:nth-of-type(5){
-	position: relative;
-}
-
-section:nth-of-type(5) h1:nth-of-type(1){
-	position: absolute;
-	top: 50%;
-	margin-left: 1em;
-}
-
-section:nth-of-type(5) p:nth-of-type(1){
-	position: absolute;
-	top: 64%;
-	margin-left: 1.5em;
-}
-
-section:nth-of-type(5) a{
-	display: flex;
-	border: .125em solid #ffffff;
-	background-color: #ffffff;
-	border-radius: 1.5em;
-	color:var(--color-text);
-	position: absolute;
-	top: 80%;
-	margin-left: 1em;
-}
-
-/*vormgeving, section 6 over de dames Adapt kleding stukken*/
-section:nth-of-type(6){
-	position: relative;
-}
-
-section:nth-of-type(6) h2{
-	margin-right: 1em;
-	margin-left: .7em;
-}
-
-section:nth-of-type(6) h2 span{
-	display: flex;
-	padding-top: .8em;
-}
-
-section:nth-of-type(6) ul{
-	display: flex;
-	flex-direction: column;
-	padding-inline-start: 0em;
-	padding-left: 1em;
-}
-
-section:nth-of-type(6) li p{
-	margin-bottom: .2em;
-}
-
-section:nth-of-type(6) ul:nth-of-type(1) li:nth-of-type(3) p{
-	position: absolute;
-	top: 83%;
-}
-
-section:nth-of-type(6) ul:nth-of-type(1) li:nth-of-type(4) p{
-	position: absolute;
-	top: 89.5%;
-}
-
-section:nth-of-type(6) ul:nth-of-type(1) img, section:nth-of-type(6) ul:nth-of-type(2) img{
-    width: 40%;
-}
-
-section:nth-of-type(6) ul:nth-of-type(2) img{
-	position: absolute;
-	top: 34.8%;
-	left: 55%;
-	width: 38.7%;
-}
-
-section:nth-of-type(6) p{
-	font-size: .7em;
-}
-
-section:nth-of-type(6) ul:nth-of-type(2) p{
-	position: absolute;
-	top: 76%;
-	left: 55%;
-	width: 38.7%;
-}
-
-section:nth-of-type(6) ul:nth-of-type(2) li:nth-of-type(2) p{
-	position: absolute;
-	top: 83%;
-}
-
-section:nth-of-type(6) ul:nth-of-type(2) li:nth-of-type(3) p{
-	position: absolute;
-	top: 89%;
-}
-
-section:nth-of-type(6) a{
-	margin-left: 1em;
-}
-
-/*vormgeving, section 7 over de dames*/
-section:nth-of-type(7){
-	position: relative;
-}
-
-section:nth-of-type(7) h1{
-	position: absolute;
-	top: 30%;
-	right: 3%;
-	margin-right: 1em;
-	color: white;
-	letter-spacing: .05rem;
-	z-index: 1;
-}
-
-section:nth-of-type(7) h1 span{
-	position: absolute;
-	bottom: -77%;
-	right: 5%;
-	color: white;
-}
-
-section:nth-of-type(7) a{
-	display: flex;
-	border: .125em solid #ffffff;
-	width: 7em;
-	background-color: #ffffff;
-	border-radius: 1.5em;
-	color:var(--color-text);
-	position: absolute;
-	top: 63%;
-	right: 3%;
-	margin-left: 1em;
-	margin-right: 1em;
-}
-
-/*vormgeving, section 8 over de heren*/
-section:nth-of-type(8){
-	position: relative;
-}
-
-section:nth-of-type(8) h1{
-	position: absolute;
-	top: 28%;
-	left: 3%;
-	margin-left: 1em;
-	color: white;
-	letter-spacing: .05rem;
-	z-index: 1;
-}
-
-section:nth-of-type(8) h1 span{
-	position: absolute;
-	bottom: -77%;
-	right: -23%;
-	margin-left: 1em;
-	color: white;
-}
-
-section:nth-of-type(8) a{
-	display: flex;
-	border: .125em solid #ffffff;
-	width: 7em;
-	background-color: #ffffff;
-	border-radius: 1.5em;
-	color:var(--color-text);
-	position: absolute;
-	top: 60%;
-	left: 3%;
-	margin-left: 1em;
-	margin-right: 1em;
-}
-
-/*vormgeving, section 9 scroll bar met de lees meer foto's*/
-
-section:nth-of-type(9){
-	display: flex;
-	flex-direction: row;
-	overflow: hidden;
-	overflow-x: scroll;
-	background-color: #ececec;
-	position: relative;
-}
-
-section:nth-of-type(9) img{
-	width: 90%;
-	margin-left: .5em;
-	margin-right: .5em;
-	padding: 1em 0 1em .5em;
-	background-size: cover;
-}
-
-section:nth-of-type(9) h4:nth-of-type(1){
-	font-size: 1em;
-	position: absolute;
-	left: 30%;
-	top: 30%;
-	color: white;
-	z-index: 1;
-}
-
-section:nth-of-type(9) a:nth-of-type(1), section:nth-of-type(9) a:nth-of-type(2), section:nth-of-type(9) a:nth-of-type(3){
-	position: absolute;
-	display: flex;
-	border: .125em solid #ffffff;
-	width: 7em;
-	background-color: #ffffff;
-	border-radius: 1.5em;
-	color:var(--color-text);
-	margin-left: 1em;
-	margin-right: 1em;
-}
-
-section:nth-of-type(9) a:nth-of-type(1){
-	left: 32%;
-	top: 55%;
-}
-
-section:nth-of-type(9) h4:nth-of-type(2){
-	display: flex;
-	text-align: center;
-	font-size: 1em;
-	position: absolute;
-	left: 127%;
-	top: 25%;
-	color: white;
-	z-index: 1;
-}
-
-section:nth-of-type(9) a:nth-of-type(2){
-	left: 124%;
-	top: 55%;
-}
-
-section:nth-of-type(9) h4:nth-of-type(3){
-	display: flex;
-	text-align: center;
-	font-size: 1em;
-	position: absolute;
-	left: 225%;
-	top: 30%;
-	color: white;
-	z-index: 1;
-}
-
-section:nth-of-type(9) a:nth-of-type(3){
-	left: 215%;
-	top: 55%;
-}
-
-
-/*vormgeving, section 10 schrijf je in en ontvang 10% korting*/
-section:nth-of-type(10){
-	background-color: black;
-	padding-top: 2em;
-	padding-left: 4.5em;
-	padding-right: 4.5em;
-	padding-bottom: 5em;
-}
-
-section:nth-of-type(10) p{
-	display: flex;
-	text-align: center;
-	color: white;
-}
-
-section:nth-of-type(10) button{
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	align-items: center;
-	border: .125em solid #ffffff;
-	background-color: #ffffff;
-	border-radius: 1.5em;
-	color: var(--color-text);
-}
-
-/*vormgeving, section 11 meer dan alleen sportkleding*/
-section:nth-of-type(11){
-	border: 0.1rem solid #bbbcbc;
-	margin-left: 1.3em;
-	margin-right: 1.5em;
-	padding: 1em;
-}
-
-section:nth-of-type(11) h2{
-	font-size: 1em;
-}
-
-section:nth-of-type(11) p{
-	font-size: .8em;
-}
-
-/* vormgeving, button mijn account*/
-
-button{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	font-weight: bold;
-	font-size: 1em;
-	background-color: rgb(83, 86, 90);
-	width: 100%;
-	height: 5em;
-	margin-bottom: 1em;
-}
-
-/* Footer */
-footer ul:nth-of-type(1), footer ul:nth-of-type(2){
-	padding-inline-start: 0;
-}
-
-footer ul:nth-of-type(1){
-	display: flex;
-	justify-content: center;
-}
-
-footer ul:nth-of-type(1) img, footer ul:nth-of-type(3) img{
-	border: none;
-    max-height: 100%;
-    max-width: 100%;
-	width: auto;
-    height: 1.5rem;
-}
-
-footer ul:nth-of-type(2) li{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 0 0 .7em;
-}
-
-footer ul:nth-of-type(2) a{
-	text-decoration: none;
-	color: var(--color-text);
-}
-
-/*  Opmaak drop-down in de footer, help en pagina's  
-code is can de website -> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details */
-
-details {
-    border-top: .100em solid #d1d1d1;
-    padding: .5em .5em .5em 1.5em;
-	margin-left: 1.5em;
-	margin-right: 1.5em;
-}
-
-details ul{
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-
-details li{
-	margin-bottom: .5em;
-}
-
-details a{
-	text-decoration: none;
-	color: var(--color-text);
-}
-
-summary {
-    font-weight: bold;
-    margin: -.5em -.5em 0;
-    padding: .5em;
-}
-
-details[open] {
-    padding: .5em;
-}
-
-details[open] summary {
-    margin-bottom: .5em;
-}
-
-/*  EINDE  */
-article{
-	display: flex;
-	flex-direction: row;
-	overflow: hidden;
-	overflow-x: scroll;
-	position: relative;
-}
-
-article h2{
-	position: absolute;
-	border-top: .100em solid #d1d1d1;
-    padding: .5em 4.5em .5em;
-	margin-top: 0;
-	margin-left: 1.5em;
-	font-size: 1em;
-}
-
-article img{
-	margin-top: 3em;
-	padding: 0 .2em 0 1em;
-	width: 50%;
-}
-
-article p{
-	background-color: #ececec;
-	height: 2.5em;
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: .8em;
-	font-weight: bolder;
-}
-
-article p:nth-of-type(1){
-	top: 70%;
-	left: 4%;
-	width: 45.5%;
-	z-index: 1;
-}
-
-article p:nth-of-type(2){
-	top: 70%;
-	left: 54%;
-	width: 45.5%;
-	z-index: 1;
-}
-article p:nth-of-type(3){
-	top: 70%;
-	left: 104%;
-	width: 45.5%;
-	z-index: 1;
-}
-
-footer ul:nth-of-type(3){
-	display: flex;
-	justify-content: space-evenly;
-	margin-right: 2.5em;
-}
-
-footer section{
-	border-top: 0.1rem solid rgb(231, 231, 231);
-}
-
-footer section p{
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	padding: .8em .8em;
-	font-size: .9em;
-}
+	box-sizing:border-box;  
+  }
+  
+  button, summary {
+	  cursor: pointer;
+  }
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+	  /* startje */
+	  --color-text:#111;
+	  --color-background:white;
+  }
+  
+  /****************/
+  /* JOUW STYLING */
+  /****************/
+  
+  /* jouw code */
+  
+  body {
+	  color:var(--color-text);
+	  background-color:var(--color-background);
+	  font-family: Roboto,Helvetica,Arial,sans-serif;
+	  width: 100%;
+	  height: 100%;
+	  margin: 0;
+	  padding: 0;
+	  overflow-x: hidden;
+	}
+	
+	li { /* Hierdoor zie je de puntjes van mijn list items niet*/
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+  header nav ul{
+	  display: flex;
+	  justify-content: space-evenly;
+	  padding-inline-start: 0;
+  }
+	
+  header nav ul li img{
+	  top: 1em;
+	  left: 1em;
+	  height: 5vh;
+	  width: 5vh;
+  } 
+  
+  img{
+	  display: flex;
+	  width: 100%;
+  }
+  
+  section:nth-of-type(1){
+	  display: flex;
+  }
+  
+  section:nth-of-type(3) a, section:nth-of-type(6) a, section:nth-of-type(9) a, section:nth-of-type(10) a, section:nth-of-type(11) a{
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  text-decoration: none;
+	  border: .125em solid #ffffff;
+	  width: 7em;
+	  background-color: #ffffff;
+	  border-radius: 1.5em;
+	  color:var(--color-text);
+	  margin-top: 3em;
+	  padding: .5em;
+  }
+  
+  section:nth-of-type(3) a ,section:nth-of-type(5) a, section:nth-of-type(7) a{
+	  color: var(--color-text);
+  }
+  
+  /*vormgeving, section 1 over de buttons nieuw bij heren en dames*/
+  
+  section:nth-of-type(1) a:nth-child(1), section:nth-of-type(1) a:nth-child(2){
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  width: 100%;
+	  color:var(--color-text);
+	  text-decoration: none;
+	  background-color: #f6f6f6;
+	  border: .125em solid #e3e3e3;
+	  height: 4em;
+  }
+  
+  /*vormgeving, section 2 over ten years strong*/
+  section:nth-of-type(2){
+	  display: flex;
+	  justify-content: flex-end;
+	  flex-direction: column;
+	  background-image: url(../images/10_Years_Strong.jpg);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  height: 70vh;
+	  max-width: 100vh;
+	  margin-bottom: 1em;
+  }
+  
+  section:nth-of-type(2) article{
+	  margin-bottom: 3em;
+	  margin-left: 3.6em;
+  }
+  
+  section:nth-of-type(2) a{
+	  display: flex;
+	  flex-direction: column;
+  }
+  
+  section:nth-of-type(2) a:nth-child(3){
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  text-decoration: none;
+	  border: .125em solid #ffffff;
+	  width: 10em;
+	  background-color: #ffffff;
+	  border-radius: 1.5em;
+	  color:var(--color-text);
+	  margin-top: 1em;
+	  padding: .5em;
+  }
+  
+  section:nth-of-type(2) a:nth-child(4){
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  text-decoration: none;
+	  border: .125em solid #3d3d3d;
+	  width: 10em;
+	  background-color: #3d3d3d;
+	  border-radius: 1.5em;
+	  color: white;
+	  margin-top: .5em;
+	  padding: .5em;
+  }
+  
+  section:nth-of-type(2) h1, section:nth-of-type(2) p{
+	  color: white;
+  }
+  
+  /*vormgeving, section 3 over nieuw Apex introductie*/
+  section:nth-of-type(3){
+	  display: flex;
+	  justify-content: flex-end;
+	  flex-direction: column;
+	  background-image: url(../images/nieuw_APEX.jpg);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  height: 70vh;
+	  max-width: 100vh;
+	  margin-bottom: 1em;
+  }
+  
+  section:nth-of-type(3) article{
+	  margin-bottom: 3em;
+	  margin-left: 2em;
+  }
+  
+  section:nth-of-type(3) h1, section:nth-of-type(3) p{
+	  color: white;
+  }
+  
+  section:nth-of-type(3) a{
+	  margin-top: 1.5em;
+	  color: var(--color-text);
+  }
+  
+  /*vormgeving, section 4 over de heren Apex kleding stukken*/
+  section:nth-of-type(4){
+	  display: flex;
+  }
+  
+  section:nth-of-type(4) article{
+	  margin-left: 1em;
+  }
+  
+  section:nth-of-type(4) article ul{
+	  display: flex;
+	  flex-direction: column;
+  }
+  
+  section:nth-of-type(4) p{
+	  color: black;
+  }
+  
+  /*vormgeving, section 5 over de heren Apex kleding stukken*/
+  section:nth-of-type(5){
+	  display: flex;
+  }
+  
+  section:nth-of-type(5) article ul{
+	  padding-inline-start: 20px;
+	  padding-inline-end: 20px;
+  }
+  
+  /*vormgeving, section 6 over Adapt familie introductie*/
+  section:nth-of-type(6){
+	  display: flex;
+	  justify-content: flex-end;
+	  flex-direction: column;
+	  background-image: url(../images/adapt_familie.jpg);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  height: 70vh;
+	  max-width: 100vh;
+	  margin-bottom: 1em;
+  }
+  
+  section:nth-of-type(6) article{
+	  margin-bottom: 3em;
+	  margin-left: 2em;
+	  margin-right: 2em;
+  }
+  
+  section:nth-of-type(6) h1, section:nth-of-type(6) p{
+	  color: white;
+  }
+  
+  section:nth-of-type(6) a{
+	  margin-top: 2em;
+  }
+  
+  /*vormgeving, section 7 over de dames Adapt kleding stukken*/
+  section:nth-of-type(7){
+	  display: flex;
+  }
+  
+  section:nth-of-type(7) article{
+	  margin-left: 1em;
+  }
+  
+  section:nth-of-type(7) article ul{
+	  display: flex;
+	  flex-direction: column;
+  }
+  
+  section:nth-of-type(7) p{
+	  color: black;
+  }
+  
+  /*vormgeving, section 8 over de dames Adapt kleding stukken*/
+  section:nth-of-type(8){
+	  display: flex;
+  }
+  
+  section:nth-of-type(8) article ul{
+	  padding-inline-start: 20px;
+	  padding-inline-end: 20px;
+  }
+  
+  /*vormgeving, section 9 over de dames*/
+  section:nth-of-type(9){
+	  display: flex;
+	  justify-content: center;
+	  flex-direction: column;
+	  background-image: url(../images/shopDames.jpg);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  height: 40vh;
+	  max-width: 100vh;
+	  margin-bottom: 1em;
+  }
+  
+  section:nth-of-type(9) article{
+	  margin-bottom: 4em;
+	  margin-left: 15em;
+	  position: relative;
+  }
+  
+  section:nth-of-type(9) h1 span{
+	  position: absolute;
+	  bottom: 45%;
+	  left: -18%;
+	  margin-left: 1em;
+	  color: white;
+  }
+  
+  section:nth-of-type(9) h1{
+	  color: white;
+	  font-size: 1.5em;
+  }
+  
+  /*vormgeving, section 10 over de heren*/
+  section:nth-of-type(10){
+	  display: flex;
+	  justify-content: center;
+	  flex-direction: column;
+	  background-image: url(../images/shopHeren.jpg);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  height: 40vh;
+	  max-width: 100vh;
+  }
+  
+  section:nth-of-type(10) article{
+	  margin-bottom: 4em;
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  position: relative;
+  }
+  
+  section:nth-of-type(10) h1 span{
+	  position: absolute;
+	  bottom: 45%;
+	  left: -8%;
+	  margin-left: 1em;
+	  color: white;
+  }
+  
+  section:nth-of-type(10) h1{
+	  color: white;
+	  font-size: 1.5em;
+  }
+  
+  /*vormgeving, section 11 scroll bar met de lees meer foto's*/
+  section:nth-of-type(11){
+	  display: flex;
+	  flex-direction: row;
+	  overflow: hidden;
+	  overflow-x: scroll;
+	  background-color: #ececec;
+	  color: white;
+  }
+  
+  section:nth-of-type(11) article:nth-child(1){
+	  display: flex;
+	  justify-content: center;
+	  flex-direction: column;
+	  background-image: url(../images/studentenkorting_leesmeer.jpg);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  height: 30vh;
+	  width: 80vh;
+	  margin: 1em;
+  }
+  
+  section:nth-of-type(11) article:nth-child(2){
+	  display: flex;
+	  justify-content: center;
+	  flex-direction: column;
+	  background-image: url(../images/cadeaukaart.jpg);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  height: 30vh;
+	  width: 90vh;
+	  margin: 1em;
+  }
+  
+  section:nth-of-type(11) article:nth-child(2) a{
+	  margin-left: 1.5em;
+  }
+  
+  section:nth-of-type(11) article:nth-child(3){
+	  display: flex;
+	  justify-content: center;
+	  flex-direction: column;
+	  background-image: url(../images/klarna_leesmeer.jpg);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  height: 30vh;
+	  width: 80vh;
+	  margin: 1em;
+  }
+  
+  section:nth-of-type(11) article:nth-child(3) h4{
+	  margin-left: 1em;
+  }
+  
+  section:nth-of-type(11) article:nth-child(3) a{
+	  margin-left: .5em;
+  }
+  
+  section:nth-of-type(11) h4{
+	  display: flex;
+	  text-align: center;
+	  margin-top: 4em;
+	  padding-left: 1em;
+	  padding-right: 1em;
+  }
+  
+  section:nth-of-type(11) article a{
+	  margin-left: 2.5em;
+	  margin-bottom: 5em;
+	  margin-top: 1em;
+  }
+  
+  
+  /*vormgeving, section 12 schrijf je in en ontvang 10% korting*/
+  section:nth-of-type(12){
+	  background-color: black;
+	  margin-bottom: 1em;
+  }
+  
+  section:nth-child(12) article{
+	  display: flex;
+	  justify-content: center;
+	  flex-direction: column;
+	  text-align: center;
+	  align-items: center;
+	  padding-top: 2em;
+	  padding-left: 4.5em;
+	  padding-right: 4.5em;
+	  padding-bottom: 2em;
+  }
+  
+  section:nth-of-type(12) p{
+	  display: flex;
+	  text-align: center;
+	  color: white;
+  }
+  
+  section:nth-of-type(12) article button{
+	  border: .125em solid #ffffff;
+	  background-color: #ffffff;
+	  height: 2.5em;
+	  width: 10em;
+	  border-radius: 1.5em;
+	  color: var(--color-text);
+  }
+  
+  /*vormgeving, section 13 meer dan alleen sportkleding*/
+  section:nth-of-type(13){
+	  border: 0.1rem solid #bbbcbc;
+	  margin-left: 1.3em;
+	  margin-right: 1.5em;
+	  padding: 1em;
+  }
+  
+  section:nth-of-type(13) h2{
+	  font-size: 1em;
+  }
+  
+  section:nth-of-type(13) p{
+	  font-size: .8em;
+  }
+  
+  /* vormgeving, button mijn account*/
+  
+  button{
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 1em;
+	  background-color: rgb(83, 86, 90);
+	  width: 100%;
+	  height: 5em;
+	  margin-bottom: 1em;
+	  margin-top: 1em;
+  }
+  
+  /* Footer */
+  footer ul:nth-of-type(1), footer ul:nth-of-type(2){
+	  padding-inline-start: 0;
+  }
+  
+  footer ul:nth-of-type(1){
+	  display: flex;
+	  justify-content: center;
+  }
+  
+  footer ul:nth-of-type(1) img, footer ul:nth-of-type(3) img{
+	  border: none;
+	  max-height: 100%;
+	  max-width: 100%;
+	  width: auto;
+	  height: 1.5rem;
+  }
+  
+  footer ul:nth-of-type(2) li{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  margin: 0 0 .7em;
+  }
+  
+  footer ul:nth-of-type(2) a{
+	  text-decoration: none;
+	  color: var(--color-text);
+  }
+  
+  /*  Opmaak drop-down in de footer, help en pagina's  
+  code is can de website -> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details */
+  
+  details {
+	  border-top: .100em solid #d1d1d1;
+	  padding: .5em .5em .5em 1.5em;
+	  margin-left: 1.5em;
+	  margin-right: 1.5em;
+  }
+  
+  details ul{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-start;
+  }
+  
+  details li{
+	  margin-bottom: .5em;
+  }
+  
+  details a{
+	  text-decoration: none;
+	  color: var(--color-text);
+  }
+  
+  summary {
+	  font-weight: bold;
+	  margin: -.5em -.5em 0;
+	  padding: .5em;
+  }
+  
+  details[open] {
+	  padding: .5em;
+  }
+  
+  details[open] summary {
+	  margin-bottom: .5em;
+  }
+  
+  /*  EINDE  */
+  footer article{
+	  display: flex;
+	  flex-direction: row;
+	  overflow: hidden;
+	  overflow-x: scroll;
+	  position: relative;
+  }
+  
+  footer article h2{
+	  position: absolute;
+	  border-top: .100em solid #d1d1d1;
+	  padding: .5em 4.5em .5em;
+	  margin-top: 0;
+	  margin-left: 1.5em;
+	  font-size: 1em;
+  }
+  
+  footer article img{
+	  margin-top: 3em;
+	  padding: 0 .2em 0 1em;
+	  width: 50%;
+  }
+  
+  footer article p{
+	  background-color: #ececec;
+	  height: 2.5em;
+	  position: absolute;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  font-size: .8em;
+	  font-weight: bolder;
+  }
+  
+  footer article p:nth-of-type(1){
+	  top: 70%;
+	  left: 4%;
+	  width: 45.5%;
+	  z-index: 1;
+  }
+  
+  footer article p:nth-of-type(2){
+	  top: 70%;
+	  left: 54%;
+	  width: 45.5%;
+	  z-index: 1;
+  }
+  footer article p:nth-of-type(3){
+	  top: 70%;
+	  left: 104%;
+	  width: 45.5%;
+	  z-index: 1;
+  }
+  
+  footer ul:nth-of-type(3){
+	  display: flex;
+	  justify-content: space-evenly;
+	  margin-right: 2.5em;
+  }
+  
+  footer section{
+	  border-top: 0.1rem solid rgb(231, 231, 231);
+  }
+  
+  footer section p{
+	  display: flex;
+	  justify-content: center;
+	  text-align: center;
+	  padding: .8em .8em;
+	  font-size: .9em;
+  }
+  
+  h1{
+	  font-size: 1.5em;
+  }
